@@ -1,12 +1,12 @@
 package m.d.r.d.g.joummah;
 
 
-
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 
 
@@ -49,8 +49,9 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                         case R.id.buttom_nav_menu_parametres:
-                            selectedFragment = new ParametresFragment();
-                            break;
+                            Intent i = new Intent(getApplicationContext(), ParametresActivity.class);
+                            startActivity(i);
+                            return true;
                     }
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
