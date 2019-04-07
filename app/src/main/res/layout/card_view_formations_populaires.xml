@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dp"
+    android:layout_height="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:id="@+id/cardview_formationspopulaires"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_cardview_formationspopulaires"
+                android:layout_width="210dp"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titre_cardview_formationspopulaires"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titre" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/ratingBar_cardview_formationspopulaires"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numStars="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prix_cardview_formationspopulaires"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prix" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

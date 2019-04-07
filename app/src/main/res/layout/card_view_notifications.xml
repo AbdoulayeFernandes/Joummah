@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:id="@+id/cardview_notifications"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    android:background="#F5F5F5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550px"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageNotif_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="550px"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorNoirProfond">
+
+            <TextView
+                android:id="@+id/categorie_cardview_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOrangeChaud"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorNoirProfond">
+
+            <TextView
+                android:id="@+id/titre_cardview_notitifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOrangeChaud"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contenu_cardview_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorWhiteSnow"
+                    android:gravity="fill_horizontal"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_partagertexte_notifications"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:background="@color/colorOrangeChaud"
+                    android:text="Partager texte" />
+
+                <Button
+                    android:id="@+id/button_partagerimage_notifications"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:background="@color/colorOrangeChaud"
+                    android:text="Partager image" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

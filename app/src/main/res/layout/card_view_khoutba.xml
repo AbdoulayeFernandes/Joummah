@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:id="@+id/cardview_notifications"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhiteSnow">
+
+        <ImageView
+            android:id="@+id/video_cardview_khoutba"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorWhiteSnow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/titre_cardview_khoutba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorNoirProfond"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contenu_cardview_khoutba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorNoirProfond"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Partager"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorOrangeChaud"
+            android:layout_gravity="center"
+            android:id="@+id/button_partager_khoutba"/>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

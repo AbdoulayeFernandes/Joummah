@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    // -- Charte graphieuqe couleurs -- //
+    <color name="colorNoirProfond">#000</color>
+    <color name="colorOrangeChaud">#ff9604</color>
+    <color name="colorWhiteSnow">#FFFFFF</color>
+    <color name="colorGreenTurtle">#A0FFCD</color>
+    <color name="colorSunOfMedina">#FFFFA0</color>
+    <color name="colorSunOfMedina2">#DD852C</color>
+    <color name="colorGreyUmar">#999FCF</color>
+    <color name="fondEcranBlancCasse">#F5F5F5</color>
+
+</resources>

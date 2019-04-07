@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">Joummah</string>
+
+    <string name="joummah_plateforme_formationenligne">Première plateforme de formation en ligne regroupant plusieurs domaines pour la communauté musulmane</string>
+
+
+    // -- Avertissement -- //
+    <string name="avetissement_khoutba">\nQue la paix soit sur vous ! Comment ça va ?!
+        \n Bienvenue sur Joummah
+       </string>
+
+    <string name="hadith_apprentissage_science">D\'après Mouawiya (qu\'Allah l\'agrée)
+        \nle Prophète (que la prière d\'Allah et Son salut soient sur lui) a dit:
+        \n« Celui a qui Allah veut du bien, il l\'instruit dans la religion ».
+        \n(Rapporté par Boukhari dans son Sahih n\°71 et Mouslim dans son Sahih n\°1037)</string>
+
+    <string name="texte_info_ecran_khoutba">As salam aleykoum
+\nQue la paix soit sur vous !
+\n
+\n
+Au nom d\’Allah le tout Miséricordieux, le très Miséricordieux
+\nLouange à Allah, nous le louons et nous lui demandons pardon, et nous cherchons refuge auprès d\'Allah contre nous même, et contre nos mauvaises actions. \nCelui qu\’Allah guide, il ne sera point perdu, et celui qu\’Allah égare, il ne sera point guidé. Et je témoigne que le Seul qui mérite l\'adoration est Allah et que Muhammad est Son serviteur et Son messager.
+\n
+\nPourquoi cette application ?
+\nUn jour, après avoir écouté le prêche d\'un imam, je me suis dit que faire une application et un site internet diffusant les prêches tous les vendredis pourrait être utile pour la communauté. J’ai donc demandé à quelques imams ce qu\’ils en pensaient et ils étaient partants.
+Par la permission d\’Allah, j\’ai alors fait cette application. Je tiens à préciser que je n\’ai aucune connaissance en développement d\’application, j\’ai essayé d\’apprendre en regardant sur internet. Je vous demande d\’être indulgent et patient si l\’application est amenée à « bugger ».
+\n
+\nJ\’ai longuement réfléchi avant de me lancer dans ce projet, j\’espère qu\’il sera utile. In sha Allah j\’améliorerai l\’application et le site internet au fur et à mesure et vous permettrai d\’avoir plus de fonctionnalité (des prêches d’autres mosquées, des hadiths, des versets, des cours, etc). Je vous demande donc d\’en parler autour de vous et de partager l\’application.
+\n
+\nJe tiens également à préciser que cette application n’est pas un substitut à l\’obligation pour les hommes d\’être présent physiquement aux prêches et à la prière du vendredi à la mosquée.
+\n
+\nPourquoi il y a une version payante sans pub ?
+\nMaintenir cette application est un coût pour moi, prendre l\’application en version sans pub me permettra de pouvoir investir afin de maintenir l\’application et de l\’améliorer. Vous pouvez bien sur me faire part de vos propositions d\’amélioration sur le site internet.
+\nLes pubs sont bien sur filtrées de sortes à vous afficher uniquement du contenu permis.
+\n
+\nQu\’Allah vous fasse miséricorde, prenez soin de vous.
+</string>
+
+    <string name="texte_info_ecran_formations">Que la paix soit sur vous !
+\n
+\nJoummah est une plateforme pour le communauté musulmane permettant d\’accéder à des formations en ligne sur divers sujets.
+\n
+\nNous vous invitons à parcourir les différentes formations et à en parler autour de vous.
+\n
+\nLes formations sont contrôlées afin de vous assurer un service sécurisé et de qualité.
+\n
+\nVous avez également la possibilité de devenir formateur si vous maitrisez un sujet en particulier. N\’hésitez pas à nous contacter sur notre site internet www.joummah.com pour en savoir plus
+\n
+\nNous sommes aussi présent sur :
+\nInstagram : JoummahOfficiel
+\nFacebook : Joummah
+\nYoutube : Joummah
+\nSnapchat : Joummah
+\n
+\nQu\’Allah vous accorde la réussite ici-bas ainsi que dans l\’au-delà !
+
+</string>
+
+
+    // -- Rappels -- //
+
+    <string name="categorie_scienceetmiracle_coran">Science &amp; Miracle du Coran</string>
+    <string name="categorie_versets_ducoran">Versets du Coran</string>
+    <string name="categorie_lislam">L\'islam</string>
+
+    <string name="miraclecoran_moficiationcoranA">Le Coran est la parole d\’Allah, qu\’Il a révélé au prophète Muhammad (prière et salut sur lui) par l\’intermédiaire de l\’ange Jibril (Gabriel). Il a été mémorisé par Muhammad, qui l\’a ensuite dicté à ses compagnons. Ces derniers l\’ont à leur tour mémorisé, mis par écrit et révisé en compagnie du prophète Muhammad (prière et salut sur lui).
+\nDepuis le moment où le Coran a été révélé jusqu\’à nos jours, il y a toujours eu un très grand nombre de musulmans l\’ayant mémorisé en entier, lettre par lettre. Pas une seule lettre du Coran n\’a été modifiée à travers les siècles.
+        \n
+        \n « En vérité c\’est Nous qui avons fait descendre le Coran, et c\’est Nous qui en sommes gardien » (Coran, 15 :9)</string>
+
+    <string name="miraclecoran_moficiationcoranB">Le Coran, révélé il y a plus de 14 siècles, fait mention de faits qui n\’ont été que récemment découverts ou prouvés par les scientifiques. Cela démontre, sans l\’ombre d\’un doute que le Coran est la parole d\’Allah, révélée par Lui au prophète Muhammad, et qu\’il n\’a pas été écrit par Muhammad ni par aucun autre être humain. Cela prouve également que Muhammad est un véritable prophète. Il serait déraisonnable de croire qu\’une personne aurait pu avoir connaissance, il y a 14 siècles, de faits qui n\’ont été découverts ou prouvés que récemment à l\’aide d\’équipements de pointe et de méthodes scientifiques hautement perfectionnées.
+\n
+\n « En vérité c\’est Nous qui avons fait descendre le Coran, et c\’est Nous qui en sommes gardien » (Coran, 15 :9)</string>
+
+    <string name="miraclecoran_embryonA">Dans le Coran, Allah parle des différents stades du développement embryonnaire humain :
+« Nous avons certes créé l\’homme d\’un extrait d\’argile, puis Nous en fîmes une goutte de sperme dans un reposoir solide. Ensuite, Nous avons fait du sperme une alaqah (sangsue, chose suspendue, caillot de sang), et de la alaqah Nous avons créé une moudghag (subtance mâchée) (Coran, 23 :12-14)
+\n
+\nSi nous comparons une sangsue à un embryon à l\’étape de la alaqah, nous découvrons des similarités entre les deux, comme nous pouvons le voir sur l\’illustration ci-dessus. De plus, l\’embryon qui est à cette étape de son développement se nourrit du sang de la mère, comme la sangsue de nourrit du sang de ceux sur qui elle se fixe.
+        \nEn faisant une recherche sur internet, il vous suffit d\’écrire « embryon suspendue » pour voir également que l\’embryon est bien suspendue dans l\’utérus de la mère, au stade de la alaqah.</string>
+
+    <string name="miraclecoran_embryonB">Le troisième sens du mot alaqah est « caillot de sang ». L\’apparence externe de l\’embryon et de ses sacs au stade de la alaqah est très similaire à celle d\’un caillot de sang. Cela est dû à la présence de quantités de sang relativement élevées dans l\’embryon au cours de ce stade. Aussi, durant ce stade, le sang contenu dans l\’embryon ne commence pas à circuler avant la fin de la troisième semaine. Donc l\’embryon, à ce stade, est comme un caillot de sang</string>
+
+    <string name="miraclecoran_embryonC">Le stade suivant, mentionné dans le verset, est le stade de la moudghag. Le mot arabe moudghah signifie « substance mâchée ». Si quelqu\’un mâchait un morceau de gomme à mâcher et le comparait à un embryon au stade de la moudghah, il verrait que l\’embryon, à ce stade, prend l\’apparence d\’une substance mâchée. Cette ressemblance est dûe aux points somites sur le dos de l\’embryon qui ressemblent, en quelque sorte, à des traces de dents dans une substance mâchée.</string>
+
+    <string name="mer_diviseendeux"> <b>« Et c\'est Lui qui donne libre cours aux deux mers : l\'une douce, rafraîchissante, l\'autre salée, amère. Et Il assigne entre les deux une zone intermédiaire et un barrage infranchissable. » (Coran, 25 :53)</b> </string>
+
+    <string name="les_montagnesA">Un livre intitulé Earth (Terre) est un manuel de référence de base dans plusieurs universités à travers le monde. L\’un de ses deux auteurs est le professeur émérite Frank Press. Il a été le conseiller scientifique de l\’ex-président américain Jimmy Carter et pendant 12 ans, président de l\’Académie Nationale des Sciences à Washinton. Dans son livre, il dit que les montagnes ont des racines sous-jacentes. Ces racines sont profondément enfoncées dans le sol ; par conséquent, les montagnes ont la forme de piquets (voir image ci-dessus)
+\n
+        \n « N\’avons-nous pas fait de la terre une couche ? Et placé les montagnes comme des piquets ? » (Coran, 78 :6-7)</string>
+
+
+    <string name="les_montagnesB"> \nEn se basant sur ces informations, le mot le plus approprié pour décrire les montagnes est le mot « piquets », puisque la plus grande partie d\’un piquet bien enfoncé est caché sous la surface de la terre. De l\’histoire des sciences, nous savons que la théorie voulant que les montagnes aient de profondes racines ne fut introduite qu\’au cours de la seconde moitié du 19ème siècle.
+\nLes montagnes jouent également un rôle important au niveau de la stabilisation de la croûte terrestre.
+\n
+\n « Et il a implanté des montagnes immobiles dans la terre afin qu\’elle ne branle pas en vous emportant avec elle » (Coran, 16 :15)</string>
+
+    <string name="origine_universA">La science de la cosmologie moderne, observationnelle et théorique, indique clairement qu\’à certain moment dans le temps, l\’univers entier n\’était autre qu\’un nuage de « fumée » (composition gazeuse très chaude, opaque). C\’est là un des principes incontestés de la cosmologie moderne. Les scientifiques peuvent maintenant observer de nouvelles étoiles se former à partir des restes de cette « fumée ». Allah dit dans le Coran :
+        \n « Il S\’est ensuite adressé au ciel, qui était alors fumée… » (Coran, 41 :11)</string>
+
+    <string name="origine_universB"> Parce que la terre et le ciel (comprenant le soleil, la lune, les étoiles, les planètes, les galaxies, etc.) se sont formés à partir de cette même « fumée », nous en concluons que la terre et le ciel étaient, au départ, joints en une seule entité. Ensuite, à partir de cette « fumée » homogène, ils ont pris forme et se sont séparés l\’un de l\’autre. Allah a dit, dans le Coran :
+    \n
+    \n « Ceux qui ont mécru n\’ont-ils pas vu que les cieux et la terre formaient une masse compacte ? Ensuite, Nous les avons séparés… » (Coran, 21 :30)</string>
+
+    <string name="toupet_devanttete">« Mais non ! S\’il ne cesse pas, Nous le saisirons, certes, par le naseyah (le toupet, le devant de la tête), un naseyah menteur et pêcheur ! » (Coran, 96 :15-16)
+\n
+\nPourquoi le Coran décrit-il le devant de la tête comme menteur et pécheur ? Pourquoi le Coran n’\a-t-il pas simplement dit que cet homme était un menteur et un pécheur ? Quelle relation y a t\’il entre le devant de la tête, le mensonge et le péché ? Cette région du cerveau est responsable de la planification, de la motivation et de la mise en action des bonnes et des mauvaises actions, et elle est également responsable du fait de dire mensonges ou de dire la vérité. Il est donc approprié de décrire le devant de la tête comme « menteur » et « pêcheur » lorsqu\’une personne ment ou commet un péché, comme le dit le Coran : « … un naseyah (toupet, devant de la tête) menteur et pécheur ! ».</string>
+
+    <string name="mersprofondes_vaguesinternesA">Allah dit dans le Coran :
+\n « Les actions des non-croyants sont encore semblables à des ténèbres sur une mer profonde : des vagues la recouvrent, vagues au-dessus desquelles s\’élèvent d\’autres vagues, sur lesquelles il y a d\’épais nuages. Ténèbres entassées les unes au-dessus des autres ; quand quelqu\’un étend la main, il ne la distingue presque pas… » (Coran, 24 : 40)
+\n
+        \nCe verset fait mention de l\’obscurité profonde qui règne dans les profondeurs des mers et océans. Les ténèbres dans les mers profondes commencent à une profondeur d\’environ 200mètres. Les êtres humains sont incapables de plonger à plus de 40 mètres sans l\’aide de sous-marins ou d\’équipements spéciaux.</string>
+
+
+    <string name="mersprofondes_vaguesinternesB"> Dans la phrase suivante : « sur une mer profonde : des vagues la recouvrent, vagues au-dessus desquelles s\’élèvent d\’autres vagues, sur lesquels il y a d\’épais nuages », tirée du verset précédent, on comprend que les eaux profondes des mers et océans sont recouvertes de vagues, et qu\’au-dessus de ces vagues il y a d\’autres vagues. Il est clair que les deuxièmes vagues auxquelles le verset fait référence sont les vagues de surface que nous pouvons voir, car il est spécifié qu\’au-dessus de ces vagues, il y a des nuages.</string>
+
+
+    <string name="mersprofondes_vaguesinternesC">Mais qu\’en est-il des premières vagues auxquelles le verset fait référence ? Les scientifiques ont récemment découvert qu\’il existe des vagues internes « qui se trouvent sur les interfaces de densité, situées entre les couches de densités différentes ». Les vagues internes ne peuvent être perçues par l\’œil humain, c\’est en étudiant les variations de température ou de salinité à un endroit déterminé que l\’on arrive à les détecter.</string>
+
+
+    <string name="lesnuagesA">« N\’as-tu pas vu qu\’Allah pousse les nuages ? Ensuite Il les réunit et Il en fait un amas, et tu vois la pluie sortir de son sein. » (Coran, 24 :43)
+    \n
+    \nUn des types de nuages de pluie est le cumulo-nimbus. Les météorologues ont découvert que les cumulo-nimbus passent à travers les différentes étapes suivantes pour produire de la pluie.
+    \n1 - Les nuages sont poussés par le vent : ils commencent à se former lorsque le vent pousse des fragments de nuages vers une aire où ces nuages convergent
+    \n2 - les nuages se rassemblent : Ensuite les fragments de nuages de rassemblent pour former un nuage plus gros
+        \n3 – Le nuage se développe en hauteur : Lorsque les petits nuages se rassemblent, les courants d\’air ascendants augmentent à l\’intérieur du gros nuage nouvellement formé. Ces courants d\’air provoquent le développement en hauteur du nuage.</string>
+
+
+    <string name="lesnuagesB">« …Et il fait descendre, du ciel, de la grêle provenant du nuage comparable à des montagnes. Il en frappe qui Il veut et l\’écarte de qui Il veut. Peu s\’en faut que l\’éclat de son éclair ne ravisse la vue. » (Coran, 24 :43)
+    \n
+    \nLes météorologues ont découvert que ces cumulo-nimbus, desquels tombe la grêle, atteignent une hauteur variante entre 25 000 et 30 000 pieds, une hauteur rappelant celle des montagnes.</string>
+
+
+    <string name="citations_miraclecoran_A">Le docteur T.V.N Persaud est professeur d\’anatomie, de pédiatrie, et d\’obstétrique-gynécologie et des sciences de la reproduction à l\’université du Manitoba à Winnepeg, Manitoba, Canada :
+    \n« D\’après ce qu\’on m\’a dit, Muhammad était un homme très ordinaire. Il ne savait pas lire et ne savait pas écrire ; c\’était un illettré. Et nous parlons d\’un homme qui a vécu il y a plus de 14 siècles. Alors vous avez quelqu\’un d\’illéttré qui fait, à propos des sciences naturelles, de profondes déclarations qui sont étonnaments exactes. Et personnellement, je ne vois pas comment cela pourrait rélever du simple hasard. Il y a trop d\’exactitudes et, comme le docteur Moore, je n\’ai pas de difficulté à accepter l\’idée que c\’est une inspiration divine, ou une révélation, qui l\’a amené à faire ces déclarations. »</string>
+
+    <string name="citations_miraclecoran_B">Le docteur Joe Leigh Simpson est président du département d\’obstétrique-gynécologie, professeur d\’obstétrique-gynécologie, et professeur de génétique humaine et moléculaire au Baylor College of Medicine, à Houston, Texas, États-Unis.
+\n « Dans chacun d\’entre vous, tous les éléments de votre création sont rassemblés dans l\’utérus de votre mère en l\’espace de 40 jours » (rapporté dans Sahih Mouslim)
+        « Si l\’embryon dépasse le stade de 42 jours, Allah lui envoie un ange qui le façonne et crée son ouïe, sa vue, sa peau, sa chair et ses os » (rapporté dans Sahih Mouslim)</string>
+
+
+    <string name="citations_miraclecoran_C">Il a beaucoup étudié ces deux paroles du prophète Muhammad, prière et salut sur lui. Il a remarqué qu\’en effet, les 40 premiers jours constituent un stade que l\’on peut clairement distinguer des autres stades dans la genèse de l\’embryon. Il a été particulièrement impressionné par la parfaite exactitude de ces paroles du prophète Muhammad. Il a dit :
+\n « Dans les deux hadiths (paroles du prophète Muhammad) que nous avons retenus nous fournissent un calendrier très précis du développement embryologique général durant les 40 premiers jours. Il y a, dans le Coran, des déclarations dont le caractère véridique a été démontré des siècles plus tard, ce qui prouve que les connaissances scientifiques que l\’on retrouve dans le Coran provienne de Dieu »</string>
+
+    <string name="citations_miraclecoran_D">Le docteur Gerarld C. Georinger est directeur de programme et maître de conférences d\’embryologie médicale au Département de biologie cellulaire de l\’école de médecine de l\’université Georgetown à Washington DC, États-Unis.
+\n « Un nombre relativement peu élevé de ayahs (versets coraniques) comprennent une description assez détaillée du développement humain, à partir du moment de l\’union des gamètes à l\’organogénèse. Aucun autre document aussi clair et complet sur le développement humain, incluant la classification, la terminologie et la description, n\’avait existé auparavant. Dans la plupart, sinon dans tous les exemples, cette description précède de plusieurs siècles les rapports écrits sur les divers stades du développement »</string>
+
+    <string name="citations_miraclecoran_E">Le docteur Yoshihide Kozai est professeur émérite à l\’Université de Tokyo à Hongo, Tokyo, Japon, et il a déjà été directeur de l\’Observatoire astronomique national à Mitaka, Tokyo, Japon. Il a déclaré :
+\n « Je suis très impressionné de trouver des informations astronomiques véridiques dans le Coran. Nous, astronomes modernes, avons concentré nos efforts pour arriver à comprendre de très petite partie de l\’univers. Parce qu\’en utilisant des télescopes, nous ne pouvons voir que de petites parties du ciel sans avoir une vision générale de l\’univers tout entier. Donc, en lisant le Coran et en répondant aux questions, je crois que je peux trouver une nouvelle façon de faire des recherches sur l\’univers. »</string>
+
+    <string name="citations_miraclecoran_F">Le professeur Tejatat Tejasen est le président du Département d\’anatomie à l\’université Chiang mai en Thaïlande. Auparavant, il était doyen de la faculté de médecine de la même université. Au cours de la Huitième conférence médicale saoudienne à Riyadh, en Arabie Saoudite, le professeur Tejasen se leva et déclara :
+        « Durant les trois dernières années, je me suis intéressé au Coran… D\’après mes études et ce que j\’ai appris au cours de cette conférence, je crois que tout ce qui a été rapporté dans le Coran il y a 14 siècles est la vérité, qui peut être prouvée par des moyens scientifiques.</string>
+
+    <string name="citations_miraclecoran_G">Comme le prophète Muhammad ne pouvait ni lire ni écrire, Muhammad est nécessairement un messager qui a transmis cette vérité, qui lui a été révélée à titre d\’édification par celui qui est le Créateur. Ce Créateur est Dieu. Par conséquent, je crois qu\’il est temps, pour moi, de déclarer La ilaha Illa Allah, il n\’y a pas d\’autre dieu qui mérite d\’être adoré en dehors d\’Allah. Muhammadour rasoulou Allah, Muhammad est le messager d\’Allah.</string>
+
+    <string name="citations_miraclecoran_H"> Finalement, j\’aimerais présenter mes félicitations pour la réussite et excellente organisation de cette conférence… Cette conférence m\’a beaucoup apporté du point de vue scientifique et religieux, et j\’ai eu l\’occasion de rencontrer plusieurs scientifiques très connus et de me faire plusieurs nouveaux amis parmi les participants. Et la chose la plus précieuse que j\’ai gagnée en venant à cette conférence est La ilaha illa Allah, Muhammadour rasoulou Allah, et d\’être devenu musulman ».</string>
+
+    <string name="bible_venuede_muhammadA">Dans Deutéronome 18, Moïse rapport que Allah lui a dit : « Je leur susciterai, du milieu de leurs frères, un prophète semblable à toi, je mettrai mes paroles dans sa bouche et il leur dira tout ce que je lui commanderai. Si un homme n\’écoute pas mes paroles que ce prohète aura prnoncées en mon nom, alors c\’est moi-même qui en demanderai compte à cet homme » (Deutéronome 18 :18-19)
+    \n
+    \n Dans ces versets nous pouvons conclure que le prophète dont il est question dans cette prophétie doit avoir les trois caractéristiques suivantes :
+    \n1 – Il sera comme Moise
+    \n2 – Il sera issu des frères des Israélites, c\’est à dire les Ismaélites
+        \n3 – Allah mettra Ses paroles dans la bouche de ce prophète et ce dernier dira tout ce que Allah lui commandera.</string>
+
+    <string name="bible_venuede_muhammadB">Par ailleurs, on remarque que dans l\’Evangile selon Jean, les juifs attendaient la réalisation de 3 prophéties distinctes. La première était la venir du Christ. La deuxième était la venue d\’Elie. Et la troisième était la venue du Prophète. C\’est ce que nous comprenons lorsque nous considérons les 3 questions qui furent posées à Jean le Baptiste : « Voici quel fut le témoignage de Jean, quand les Juifs envoyèrent : « Qui es-tu ? ». Il confessa, il ne nia pas, il confessa : « Je ne suis pas le Christ ». « Quoi donc ? lui demandèrent-ils. Es-tu Elie ? ». Il dit « Je ne le suis pas ». « Es tu le Prophète ? » Il repondit « Non. » (Jean, 1 :19-21)</string>
+
+    <string name="predictions_romains">Allah dit, dans le Coran :
+    « Les Romains ont été vaincus dans le pays voisin (de la Péninsule arabe), et après leur défaite ils seront les vainqueurs, dans quelques années (3 à 9 ans)… » (Coran, 30 :2-4)
+    \n
+    \nDans un livre intitulé History Of the Byzantine State, il est dit que l\’armée romaine subît une sévère défaite à Antioche en 613, et en conséquence, les Perses avancèrent rapidement de tous côtés. À ce moment-là, il était difficile d\’imaginer que les Romains puissent vaincre les Perses, mais le Coran prédit que les Romains seraient victorieux dans une période de 3 à 9 ans. En 622, 9 ans après la défaite des Romains, les deux puissances s\’affrontèrent sur le sol arménien, et le résultat fut la victoire des Romains sur les Perses, pour la première fois depuis leur défaite en 613. La prophétie se réalisa comme Allah l\’avait dit dans le Coran.</string>
+
+    <string name="meditation_lebonheur"> Le véritable bonheur et la paix intérieure découlent de notre soumission aux commandements du Créateur et Seigneur de ce monde. Allah a dit, dans le Coran :
+    \n « N\’est ce point par l\’évocation D\’Allah que se tranquillisent les cœurs ? » (Coran, 13 :28)
+    \n
+    \nPar contre, celui qui se détourne du Coran aura une vie éprouvante ici-bas, Allah a dit :
+    \n « Et quiconque se détourne du Coran ménera, certes, une vie pleine de gêne, et le jour de la Résurrection, Nous l\’amènerons aveugle au rassemblement. » (Coran, 20 :124)
+    \nCela peut expliquer pourquoi certaines personnes sont tristes et vont même jusqu\’à se suicider alors qu\’elles jouissent du confort matériel que peut acheter l\’argent.</string>
+
+    <string name="jesus_danslecoranA">« (Rappelle-toi) quand les Anges dirent : « Ô Maryam (Marie), voilà que Allah t\’annonce une parole de Sa part : son nom sera le Messie Issa (Jésus), fils de Marie, illustre ici-bas comme dans l\’au-delà, et l\’un des rapprochés d\’Allah. Il parlera aux gens, dans le berceau et en son âge mûr, et il sera du nombre des gens de bien ». Elle dit : « Seigneur ! Comment aurais-je un enfant, alors qu\’aucun homme ne m\’a touchée ? ». « C\’est ainsi ! ». Dit-Il. Allah crée ce qu\’Il veut. Quand il décide d\’une chose, Il lui dit seulement « Sois », et elle est aussitôt. » (Coran, 3 :45-47)</string>
+
+    <string name="jesus_danslecoranB">« Pour Allah, Issa (Jésus) est comme Adam qu\’Il créa de poussière, puis Il lui dit : « Sois » ; et il fut. » (Coran, 3 :59)
+    \n
+    \n « En vérité, je viens à vous avec un signe de la part de votre Seigneur. Pour vous, je forme de la glaise comme la figure d\’un oiseau, puis je souffle dedans ; et par la permission d\’Allah, cela devient un oiseau. Et je guéris l\’aveugle-né et le lépreux, et je ressuscite les morts, par la permission d\’Allah. Et je vous apprends ce que vous mangez et ce que vous amassez dans vos maison… » (Coran, 3 :49)
+    \n
+    \n « Ils dirent : « Nous avons tué le Messie, Issa, fils de Maryam, le messager d\’Allah » … Or, ils ne l\’ont ni tué ni crucifié, mais son apparence fut donnée à un autre homme (et ils tuèrent cet homme) … » (Coran, 4 :157)</string>
+
+    <string name="comment_devenir_musulman">C\’est simplement en disant : « La Ilaha Illa Allah, Muhammadour rasoulou Allah » avec conviction qu\’une personne se convertit à l\’islam et devient musulmane. Ces paroles signifient : « Il n\’y a pas d’autre dieu qu\’Allah et Muhammad est son messager ».
+\n Le prophète Muhammad, prière et salut sur lui, a dit : « Allah se réjouit plus du repentir de quelqu\’un lorsqu\’il se repent que ne se réjouirait l\’un d\’entre vous s\’il montait son chameau dans une terre désertique et que son chameau s’échappe tout à coup en emportant sa nourriture et sa boisson. Il va s\’allonger à l\’ombre d\’un arbre (attendant la mort), car il n\’a aucun espoir de retrouver son chameau. Et alors qu\’il est dans cet état de désespoir, voilà que son chameau est là, devant lui ! Il le saisit par la bride et dit, sous l\’effet de sa joie excessive : « Seigneur Allah ! Tu es mon serviteur et je suis Ton seigneur ! », s\’embrouillant tellement sa joie est intense. » (Rapporté dans Sahih Mouslim et Sahih Al Boukhari)</string>
+
+    <string name="dequoi_parle_lecoran"> Le coran, le dernier livre révélé par Allah, est la principale source sur laquelle se base chaque musulman pour sa foi et la pratique de sa religion. Il traite de tous les sujets qui concernent les êtres humains : sagesse, doctrine, adoration, transactions, lois, etc. Mais son thème de base est la religion entre Allah et Ses créatures. Il contient également des lignes de conduite et des enseignements détaillés nécessaires à une société juste, à un comportement convenable et à un système économique équitable.
+    \n Soulignons que le Coran a été révélé à Muhammad, prière et salut sur lui, en arabe seulement. Donc n\’importe quelle traduction du Coran, en français ou dans une autre langue, n\’est pas le Coran lui-même, ni une autre version du Coran, mais seulement une traduction du sens de ses versets. Le Coran n\’existe que dans la langue arabe dans laquelle il a été révélé.</string>
+
+    <string name="meditation_personnesageesA">« Et ton Seigneur a décrété : « N\’adorez que Lui ; et marquez de la bonté envers les père et mère : si l\’un d\’eux ou tous deux doivent atteindre la vieillesse auprès de toi, alors ne leur dit point : « Fi ! » et ne les brusque pas, mais adresse-leur des paroles respectueuses. Et par miséricorde, abaisse pour eux l\’aile de l\’humilité, et dit : « Ô mon Seigneur, fais-leur, à tous deux, miséricorde puisqu\’ils m\’ont élevé lorsque j\’étais tout petit. » (Coran, 17 :23-24)</string>
+
+    <string name="meditation_personnesageesB">Dans le monde islamique, il est rare de trouver des hospices de personnes âgées. L\’effort requis pour prendre soin de ses parents au moment le plus difficile de leur vie est considéré comme un honneur et une bénédiction, et aussi comme une occasion de grandit spirituellement. En islam, il n\’est pas suffisant de seulement prier pour nos parents ; nous devons aussi agir envers eux avec une compassion illimitée, en nous rappelant que lorsque nous étions petits et faibles, ils nous ont préférés à eux-mêmes. Les mères sont particulièrement honorées. Quand les parents musulmans atteignent un âge avancé, ils sont traités avec compassion, gentillesse et désintéressement. En islam, servir ses parents est un devoir, et c\’est leur droit de l\’exiger. Il est considéré comme méprisable de manifester de l\’irritation envers les personnes âgées lorsque, sans que ce soit leur faute, elles deviennent difficiles.</string>
+
+    <string name="insultes_grossierA">Le prophète Muhammad (prière et salut sur lui) a dit: «Rien ne pèsera dans la balance du croyant au Jour de la Résurrection comme le bon caractère. Car Allah déteste l’homme obscène et grossier. Et l\’homme doté d\’un bon caractère atteindra par cette qualité le degré de celui qui jeûne et prie la nuit.» [Rapporté par Ahmad].
+    \n
+        \nLe prophète Muhammad, prière et salut sur lui, nous enseigne qu\’Allah (exalté soit-il) n\’aime pas les grossièretés ni les personnes exhibitionnistes qui se font remarquer en public. Abd Allah ben Amr a dit : « Le Prophète (prière et salut sur lui) n\’était grossier ni de nature ni dans ses paroles. Il disait : « Le meilleur d\’entre vous est celui qui a le meilleur caractère. » »</string>
+
+    <string name="insultes_grossierB">Suivre l\’éthique morale de l\’Islam permet d\’entretenir de bonnes relations avec autrui. Les grossièretés engendrent une gêne qui se transforme très souvent en dégoût pour la personne qui ne cesse de jurer.
+    Selon Ibn Mas\’oûd (qu\’Allah l\’agréé), le Messager d\’Allah (prière et salut sur lui) a dit : « Le vrai croyant n\’est pas celui qui fait douter de la filiation des autres, ni celui qui maudit autrui, ni celui qui est impudique et grossier. » [At-Tirmidhi]</string>
+
+    <string name="propagationislam_science"> L\’islam enseigne à l\’homme à utiliser ses facultés d\’intelligence et d\’observation. À peine quelques années après le début de la propagation de l\’islam, de grandes civilisations et universités étaient en plein essor. La synthèse des idées provenant de l\’Est et le l\’Ouest, et des idées anciennes et nouvelles, a amené de grands progrès en médecine, en mathématiques, en physique, en astronomie, en géographie, en architecture, en art, en littérature et en histoire. Plusieurs systèmes fondamentaux, comme l\’algèbre, les chiffres arabes, et le concept du zéro (qui fut indispensable à l\’avancement des mathématiques), furent transmis du monde musulman à l\’Europe médiévale. Des instruments sophistiqués, qui rendirent possibles les voyages exploratoires européens, comme l\’astrolabe, le cadran et les excellentes cartes de navigation, furent également conçus par des musulmans.</string>
+
+
+    <string name="medication_chiffreA">La formulation sept cieux (sab\'a samawaat) est répétée sept fois. La création des cieux (khalq al-samawaat) est elle aussi répétée sept fois.
+    \n7cieux : 7 fois
+    \nLa création des cieux : 7 fois
+    \n
+    \nLe mot paiement ou récompense (jazaa\') est répété 117 fois, alors que le mot pardon (maghfirah) qui est l\'une des valeurs morales de base prônées par le Coran, est lui répété exactement le double : 234 fois.
+    \nRécompense : 117 fois
+    \nPardon : 234 fois
+    \n
+    \nHadith : D\'après Abou Houreira (qu\'Allah l\'agrée), le Prophète (que la prière d\'Allah et Son salut soient sur lui) a dit: « Certes Allah a écrit un livre avant de créer la création dans lequel il est inscrit: Certes ma miséricorde prévaut sur ma colère et il est écrit auprès de lui au-dessus du trône ».
+        (Rapporté par Boukhari dans son Sahih n°7554 et Mouslim dans son Sahih n°2751)</string>
+
+    <string name="medication_chiffreB">Les mots monde (dounia) et l\'au-delà (akhira) sont répétés exactement le même nombre de fois, c\'est-à-dire : 115.
+\nIci-bas : 115 fois
+\nAu-delà : 115 fois
+\n
+\nLes mots paradis (jannah) et enfer (jahannam) sont chacun répétés 77 fois.
+\nParadis : 77 fois
+\nEnfer : 77 fois
+\n
+\nLes mots homme (rajoul) et femme (mar\'ha) sont répétés un nombre égal de fois : 23 fois.
+\nLe nombre de fois où les mots homme et femme sont chacun répétés dans le Coran est de 23 fois, et c\'est en même temps celui des chromosomes de l\'oeuf et du spermatozoïde dans la formation de l\'embryon humain. Le nombre total de chromosomes humains est de 46 ; 23 provenant de la mère et 23 du père.
+\nFemme : 23 fois
+\nHomme : 23 fois
+</string>
+
+
+</resources>

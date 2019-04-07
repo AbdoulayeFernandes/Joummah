@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondEcranBlancCasse">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <SearchView
+                        android:id="@+id/searchview_ecrannotif"
+                        android:layout_width="352dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorOrangeChaud"
+                        android:queryHint="rechercher" />
+
+                    <ImageButton
+                        android:id="@+id/info_ecran_notifications"
+                        android:layout_width="61dp"
+                        android:layout_height="56dp"
+                        android:background="@color/colorOrangeChaud"
+                        app:srcCompat="@drawable/ic_info_outline_black_24dp"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+
+                            <android.support.v7.widget.GridLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="15dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_scienceetmiracle"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            app:srcCompat="@drawable/miracle_coran"
+                                            tools:ignore="VectorDrawableCompat"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_scoenceetmiracle"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="1"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Science &amp; Mirale \nCoran" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_versets"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_reading_quran"
+                                            tools:ignore="VectorDrawableCompat" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_versets"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="1"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Versets" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_islam"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_allah"
+                                            tools:ignore="VectorDrawableCompat" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_islam"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:layout_weight="1"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="L'islam" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_citations"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_citation"
+                                            tools:ignore="VectorDrawableCompat" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_citations"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Citations" /> <!-- citation par toi même -->
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_hadiths"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_hadiths"
+                                            tools:ignore="VectorDrawableCompat" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_hadiths"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Hadiths" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_hadiths_qudsi"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_hadiths_qudsi"
+                                            tools:ignore="VectorDrawableCompat" />
+                                        <TextView
+                                            android:id="@+id/textView_categorie_hadiths_qudsi"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Hadiths Qudsi" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_citadelle"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_citadelle"
+                                            tools:ignore="VectorDrawableCompat" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_citadelle"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Citadelle \nMusulman" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_compagnons"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_compagnon"
+                                            tools:ignore="VectorDrawableCompat" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_compagnons"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Compagnons" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_sante"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_sante"
+                                            tools:ignore="VectorDrawableCompat" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_sante"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Santé" /> <!-- parler alimentation, sport, etc, pas forcément des hadiths -->
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/imageButton_categorie_meditations"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                            app:srcCompat="@drawable/ic_meditation"
+                                            tools:ignore="VectorDrawableCompat" />
+
+                                        <TextView
+                                            android:id="@+id/textView_categorie_medications"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            android:text="Méditations" /> <!-- méditation sur tout, insecte, nuage, sang, main, peau, épreuves, respiration, écrit par toi même -->
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.GridLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_notifications"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:nestedScrollingEnabled="false" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

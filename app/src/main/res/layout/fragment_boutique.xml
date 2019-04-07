@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondEcranBlancCasse">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+<!-- PAS POUR LE LOT 1
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <SearchView
+                                android:id="@+id/searchview_ecrankhoutba"
+                                android:layout_width="298dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorOrangeChaud" />
+
+                            <ImageButton
+                                android:id="@+id/filtrer_ecran_khoutba"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:background="@color/colorOrangeChaud"
+                                app:srcCompat="@drawable/ic_baseline_filter_list_24px"
+                                tools:ignore="VectorDrawableCompat" />
+
+                            <ImageButton
+                                android:id="@+id/info_ecran_boutique"
+                                android:layout_width="60dp"
+                                android:layout_height="56dp"
+                                android:background="@color/colorOrangeChaud"
+                                app:srcCompat="@drawable/ic_info_outline_black_24dp"
+                                tools:ignore="VectorDrawableCompat" />
+
+
+                        </LinearLayout>
+
+-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorOrangeChaud">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center"
+                    android:text="Boutique"
+                    android:textColor="@color/colorNoirProfond"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="17dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView354"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorNoirProfond"
+                    android:textStyle="normal"
+                    android:text="L'insertion des produits dans l'application est en cours, en attendant une nouvelle version de l'application, vous pouvez retrouver tous nos produits sur notre site internet. " />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonRedirectionSiteBoutique"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorOrangeChaud"
+                android:text="Visiter la boutique" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorNoirProfond"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:textStyle="bold"
+                    android:text="Parmi nos produits, il y aussi des coffrets/box plutôt pas mal ! N'hésitez pas à y faire un tour régulièrement pour voir les nouveautés !." />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

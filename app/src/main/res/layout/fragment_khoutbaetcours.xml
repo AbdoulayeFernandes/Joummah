@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondEcranBlancCasse">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutcontenantlogosansyeuxkhouta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants">
+            <!-- blocksdescendants permet que quand tu click sur le fragment il s'ouvre en haut et non en bas -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <SearchView
+                    android:id="@+id/searchview_ecrankhoutba"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorOrangeChaud" />
+
+                <ImageButton
+                    android:id="@+id/info_ecran_khoutba"
+                    android:layout_width="64dp"
+                    android:layout_height="56dp"
+                    android:background="@color/colorOrangeChaud"
+                    app:srcCompat="@drawable/ic_info_outline_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/imageButton_categorie_preches_fragmentblog"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="2dp"
+                                        app:srcCompat="@drawable/ic_preches_mosquee"
+                                        tools:ignore="VectorDrawableCompat"
+                                        android:background="@drawable/fond_orange_contournoir_bouton_categorie" />
+
+                                    <TextView
+                                        android:id="@+id/textView_preche_khoutba_fragmentblog"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:textAlignment="center"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold"
+                                        android:text="Prêches (Khoutba)" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/imageButton_categorie_sante_fragmentblog"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="2dp"
+                                        android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                        app:srcCompat="@drawable/ic_sante"
+                                        tools:ignore="VectorDrawableCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView_sante_fragmentblog"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:textAlignment="center"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold"
+                                        android:text="Santé" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/imageButton_categorie_formation_fragmentblog"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="2dp"
+                                        android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                        app:srcCompat="@drawable/ic_formations_livre"
+                                        tools:ignore="VectorDrawableCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView_formations_fragmentblog"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:textAlignment="center"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold"
+                                        android:text="Formations" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/imageButton_categorie_meditations_fragmentblog"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="2dp"
+                                        android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                        app:srcCompat="@drawable/ic_meditation"
+                                        tools:ignore="VectorDrawableCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView_meditation_fragmentblog"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:textAlignment="center"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold"
+                                        android:text="Méditations" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/imageButton_categorie_business_entreprendre_fragmentblog"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="2dp"
+                                        android:background="@drawable/fond_orange_contournoir_bouton_categorie"
+                                        app:srcCompat="@drawable/ic_line_chart"
+                                        tools:ignore="VectorDrawableCompat" />
+
+                                    <TextView
+                                        android:id="@+id/textView_business_entreprendre_fragmentblog"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:textAlignment="center"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold"
+                                        android:text="Business\nEntreprendre" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.GridLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titre_videos_recentes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Articles récents"
+                    android:textColor="@color/colorNoirProfond"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_khoutba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/buttom_nav_menu_notifcations"
+        android:icon="@drawable/ic_baseline_notifications_24px"
+        android:title="Rappels"/>
+
+    <item
+        android:id="@+id/buttom_nav_menu_formations"
+        android:icon="@drawable/ic_baseline_extension_24px"
+        android:title="Formations"/>
+
+    <item
+        android:id="@+id/buttom_nav_menu_khoutbaetcours"
+        android:icon="@drawable/ic_blogger"
+        android:title="Blog"/>
+
+    <item
+        android:id="@+id/buttom_nav_menu_boutique"
+        android:icon="@drawable/ic_baseline_add_shopping_cart_24px"
+        android:title="Boutique"/>
+
+    <item
+        android:id="@+id/buttom_nav_menu_parametres"
+        android:icon="@drawable/ic_baseline_menu_24px"
+        android:title="Paramètres"/>
+
+</menu>

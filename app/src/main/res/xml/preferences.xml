@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:defaultValue="Default value"
+        android:key="edit_text_preference_2"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Version premium" />
+
+    <Preference
+        android:defaultValue="Default value"
+        android:key="edit_text_preference_1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Partager l'application" />
+
+    <Preference
+        android:defaultValue="Default value"
+        android:key="edit_text_preference_3"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Envoyer une suggestion pour l'application" />
+
+    <ListPreference
+        android:title="Changer la couleur du thème"
+        />
+
+</PreferenceScreen>
