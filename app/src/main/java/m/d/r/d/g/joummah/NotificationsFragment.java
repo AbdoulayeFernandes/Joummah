@@ -2,12 +2,14 @@ package m.d.r.d.g.joummah;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.TextViewCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -183,7 +185,7 @@ public class NotificationsFragment extends Fragment {
 
 
     private List<MaNotification> initialisationList () {
-        MaNotification mNotificationIdeale = new MaNotification(R.drawable.coran, getString(R.string.categorie_scienceetmiracle_coran), "Aucune modification du Coran 1/2",getString(R.string.miraclecoran_moficiationcoranA));
+        MaNotification mNotificationIdeale = new MaNotification(R.drawable.coran, getString(R.string.categorie_scienceetmiracle_coran), "Aucune modification du Coran 1/2",getString(R.string.miraclecoran_moficiationcoranA), Uri.parse("android.resource://m.d.r.d.g.joummah/drawable/imagetestapatarer"));
         MaNotification mNotificationIdeale2 = new MaNotification(R.drawable.coran, getString(R.string.categorie_scienceetmiracle_coran), "Aucune modification du Coran 2/2",getString(R.string.miraclecoran_moficiationcoranB));
         MaNotification mNotificationIdeale3 = new MaNotification(R.drawable.embryon_sangsue, getString(R.string.categorie_scienceetmiracle_coran), "Le développement embryonnaire humain 1/3",getString(R.string.miraclecoran_embryonA));
         MaNotification mNotificationIdeale4 = new MaNotification(R.drawable.embryon_sangsue, getString(R.string.categorie_scienceetmiracle_coran), "Le développement embryonnaire humain 2/3",getString(R.string.miraclecoran_embryonB));
@@ -299,7 +301,6 @@ public class NotificationsFragment extends Fragment {
 
             mButtonPartagerText = itemView.findViewById(R.id.button_partagertexte_notifications);
 
-
             // partager le texte de la notification
             mButtonPartagerText.setOnClickListener(new View.OnClickListener() {
 
@@ -317,7 +318,20 @@ public class NotificationsFragment extends Fragment {
 
 
             mButtonPartagerImage = itemView.findViewById(R.id.button_partagerimage_notifications);
+
             // partager la notification en image
+            mButtonPartagerImage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    shareIntent = new Intent (Intent.ACTION_SEND);
+                    shareIntent.setAction(Intent.ACTION_SEND);
+                    shareIntent.setType("image/png");
+                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Joummah");
+                    shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("android.resource://m.d.r.d.g.joummah/drawable/imagetestapatarer"));
+                    startActivity(Intent.createChooser(shareIntent, "Partager sur"));
+                }
+            });
+
 
         }
     }

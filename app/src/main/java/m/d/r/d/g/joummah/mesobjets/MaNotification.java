@@ -1,11 +1,13 @@
 package m.d.r.d.g.joummah.mesobjets;
 
+import android.net.Uri;
+
 public class MaNotification {
     private String categorie;
     private String titre;
     private String contenu;
     private int image;
-    private int imagepourpartage;
+    private Uri imagepourpartage;
 
     public MaNotification() {
     }
@@ -23,17 +25,12 @@ public class MaNotification {
         this.contenu = contenu;
     }
 
-    public MaNotification(Integer imageid, String categorie, String titre, String contenu, Integer imageapartager) {
+    public MaNotification(Integer imageid, String categorie, String titre, String contenu, Uri imageapartager) {
         this.image = imageid;
         this.categorie = categorie;
         this.titre = titre;
         this.contenu = contenu;
         this.imagepourpartage = imageapartager;
-    }
-
-    // ou sinon tu ajoutes une deuxieme image au construtor juste en haut, mais elle ne se verra pas en visuel, et tu pourras la mettre au bouton partager
-    public MaNotification (Integer imageid) {
-        this.image = imageid;
     }
 
 
@@ -67,6 +64,14 @@ public class MaNotification {
 
     public void setContenu(String contenu) {
         this.contenu = contenu;
+    }
+
+    public Uri getImagepourpartage() {
+        return imagepourpartage;
+    }
+
+    public void setImagepourpartage(Uri imageapartager) {
+        this.imagepourpartage = imageapartager;
     }
 
 }
