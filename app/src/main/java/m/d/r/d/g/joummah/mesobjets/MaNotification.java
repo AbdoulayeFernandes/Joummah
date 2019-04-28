@@ -1,13 +1,11 @@
 package m.d.r.d.g.joummah.mesobjets;
 
-import android.net.Uri;
-
 public class MaNotification {
     private String categorie;
     private String titre;
     private String contenu;
     private int image;
-    private Uri imagepourpartage;
+    private String imagepourpartage;
 
     public MaNotification() {
     }
@@ -25,7 +23,7 @@ public class MaNotification {
         this.contenu = contenu;
     }
 
-    public MaNotification(Integer imageid, String categorie, String titre, String contenu, Uri imageapartager) {
+    public MaNotification(Integer imageid, String categorie, String titre, String contenu, String imageapartager) {
         this.image = imageid;
         this.categorie = categorie;
         this.titre = titre;
@@ -66,11 +64,11 @@ public class MaNotification {
         this.contenu = contenu;
     }
 
-    public Uri getImagepourpartage() {
+    public String getImagepourpartage() {
         return imagepourpartage;
     }
 
-    public void setImagepourpartage(Uri imageapartager) {
+    public void setImagepourpartage(String imageapartager) {
         this.imagepourpartage = imageapartager;
     }
 

@@ -185,7 +185,7 @@ public class NotificationsFragment extends Fragment {
 
 
     private List<MaNotification> initialisationList () {
-        MaNotification mNotificationIdeale = new MaNotification(R.drawable.coran, getString(R.string.categorie_scienceetmiracle_coran), "Aucune modification du Coran 1/2",getString(R.string.miraclecoran_moficiationcoranA), Uri.parse("android.resource://m.d.r.d.g.joummah/drawable/imagetestapatarer"));
+        MaNotification mNotificationIdeale = new MaNotification(R.drawable.coran, getString(R.string.categorie_scienceetmiracle_coran), "Aucune modification du Coran 1/2",getString(R.string.miraclecoran_moficiationcoranA), "imagetestapatarer");
         MaNotification mNotificationIdeale2 = new MaNotification(R.drawable.coran, getString(R.string.categorie_scienceetmiracle_coran), "Aucune modification du Coran 2/2",getString(R.string.miraclecoran_moficiationcoranB));
         MaNotification mNotificationIdeale3 = new MaNotification(R.drawable.embryon_sangsue, getString(R.string.categorie_scienceetmiracle_coran), "Le développement embryonnaire humain 1/3",getString(R.string.miraclecoran_embryonA));
         MaNotification mNotificationIdeale4 = new MaNotification(R.drawable.embryon_sangsue, getString(R.string.categorie_scienceetmiracle_coran), "Le développement embryonnaire humain 2/3",getString(R.string.miraclecoran_embryonB));
@@ -280,6 +280,7 @@ public class NotificationsFragment extends Fragment {
         private Button mButtonPartagerText;
         private Intent shareIntent;
         private Button mButtonPartagerImage;
+        private String mImageaPartager;
 
 
         public RecyclerViewHolder(View itemView) {
@@ -327,11 +328,10 @@ public class NotificationsFragment extends Fragment {
                     shareIntent.setAction(Intent.ACTION_SEND);
                     shareIntent.setType("image/png");
                     shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Joummah");
-                    shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("android.resource://m.d.r.d.g.joummah/drawable/imagetestapatarer"));
+                    shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("android.resource://m.d.r.d.g.joummah/drawable/"+mImageaPartager));
                     startActivity(Intent.createChooser(shareIntent, "Partager sur"));
                 }
             });
-
 
         }
     }
@@ -360,6 +360,7 @@ public class NotificationsFragment extends Fragment {
             holder.mTextViewCategorieNotifications.setText(notif.getCategorie());
             holder.mTextViewTitreNotifications.setText(notif.getTitre());
             holder.mTextViewContenuNotifications.setText(notif.getContenu());
+            holder.mImageaPartager=notif.getImagepourpartage();
         }
 
         @Override
