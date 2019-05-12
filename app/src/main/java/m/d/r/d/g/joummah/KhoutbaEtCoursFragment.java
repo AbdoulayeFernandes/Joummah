@@ -24,6 +24,10 @@ import android.widget.ImageButton;
 import android.widget.SearchView;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -72,8 +76,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View viewKhoutba = inflater.inflate(R.layout.fragment_khoutbaetcours, container, false);
 
-
-        chargementLien();
+        final List<MaKhoutba> listkhoutba = chargementLien();
 
         // ici c'est un test pour le boutton info du fragment khoutba //
         ImageButton infoEcranKhoutba;
@@ -85,20 +88,6 @@ public class KhoutbaEtCoursFragment extends Fragment {
                 startActivity(new Intent(getActivity(), InfoUtilisationAppKhoutba.class));
             }
         });
-
-
-        MaKhoutba mKhoutbaideale = new MaKhoutba("Test Titre", "");
-        MaKhoutba mKhoutbaideale2 = new MaKhoutba("Parents", "");
-        MaKhoutba mKhoutbaideale3 = new MaKhoutba("Comportement", "test contenu");
-        MaKhoutba mKhoutbaideale4 = new MaKhoutba("Hajj", "");
-        MaKhoutba mKhoutbaideale5 = new MaKhoutba("Ramadan", "");
-
-        final List<MaKhoutba> listkhoutba = new ArrayList<>();
-        listkhoutba.add(mKhoutbaideale);
-        listkhoutba.add(mKhoutbaideale2);
-        listkhoutba.add(mKhoutbaideale3);
-        listkhoutba.add(mKhoutbaideale4);
-        listkhoutba.add(mKhoutbaideale5);
 
 
         final RecyclerView recyclerViewKhoutba = viewKhoutba.findViewById(R.id.recycler_view_khoutba);
@@ -184,17 +173,36 @@ public class KhoutbaEtCoursFragment extends Fragment {
         return viewKhoutba;
     }
 
-    private void chargementLien() {
+    // récuparation infos posts
+    private List<MaKhoutba> chargementLien() {
         PostService postService = new PostService();
         AsyncTask<Void, Void, String> task = postService.execute();
+
+        List<MaKhoutba> listPost = new ArrayList<>();
+
         try {
             String resultat = task.get();
             Log.i("résultat", "résultat : "+resultat);
+            JSONObject jsonObject = new JSONObject(resultat);
+            JSONArray jsonArray = jsonObject.getJSONArray("records");
+
+            for (int i = 0;i<jsonArray.length();i++){
+                JSONObject jsonPost = jsonArray.getJSONObject(i);
+                MaKhoutba khoutba = new MaKhoutba();
+                khoutba.setTitre(jsonPost.getString("titre"));
+                khoutba.setContenu(jsonPost.getString("description"));
+                listPost.add(khoutba);
+            }
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
+
+        return listPost;
     }
 
 
