@@ -71,57 +71,126 @@
                     android:text="Boutique"
                     android:textColor="@color/colorNoirProfond"
                     android:textSize="20dp"
-                    android:textStyle="bold"
                     android:layout_marginBottom="17dp"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView354"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp"
-                    android:layout_marginTop="110dp"
                     android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textColor="@color/colorNoirProfond"
-                    android:textStyle="normal"
-                    android:text="L'insertion des produits dans l'application est en cours, en attendant une nouvelle version de l'application, vous pouvez retrouver tous nos produits sur notre site internet. " />
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageProduitUn"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/box_coran_rose_clair" />
+
+                    <TextView
+                        android:id="@+id/titreProduitUn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:textStyle="bold"
+                        android:text="JoumBox Coran Rose Clair" />
+
+                    <Button
+                        android:id="@+id/buttonProduitUn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/colorOrangeChaud"
+                        android:text="Voir" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageProduitDeux"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/muscbox_royale" />
+
+                    <TextView
+                        android:id="@+id/titreProduitDeux"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:textStyle="bold"
+                        android:text="MuscBox Royale" />
+
+                    <Button
+                        android:id="@+id/buttonProduitDeux"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/colorOrangeChaud"
+                        android:text="Voir" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageProduitTrois"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/box_medecine_prophetique" />
+
+                    <TextView
+                        android:id="@+id/titreProduitTrois"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:textStyle="bold"
+                        android:text="JoumBox Médecine Prophétique" />
+
+                    <Button
+                        android:id="@+id/buttonProduitTrois"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/colorOrangeChaud"
+                        android:text="Voir" />
+                </LinearLayout>
+
+
+
+
             </LinearLayout>
+
 
             <Button
                 android:id="@+id/buttonRedirectionSiteBoutique"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@color/colorOrangeChaud"
-                android:text="Visiter la boutique" />
+                android:text="Visiter toute la boutique" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textColor="@color/colorNoirProfond"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp"
-                    android:textStyle="bold"
-                    android:text="Parmi nos produits, il y aussi des coffrets/box plutôt pas mal ! N'hésitez pas à y faire un tour régulièrement pour voir les nouveautés !." />
-            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

@@ -38,6 +38,29 @@
                     app:srcCompat="@drawable/ic_baseline_filter_list_24px"
                     tools:ignore="VectorDrawableCompat"/>
 
+            </LinearLayout>
+
+-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorOrangeChaud">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorOrangeChaud"
+                    android:gravity="center"
+                    android:text="             Formations"
+                    android:textColor="@color/colorNoirProfond"
+                    android:textSize="20dp" />
+
                 <ImageButton
                     android:id="@+id/info_ecran_formations"
                     android:layout_width="62dp"
@@ -46,48 +69,6 @@
                     app:srcCompat="@drawable/ic_info_outline_black_24dp"
                     tools:ignore="VectorDrawableCompat" />
 
-
-            </LinearLayout>
-
--->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@color/colorOrangeChaud">
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/colorOrangeChaud"
-                    android:gravity="center"
-                    android:text="Formations"
-                    android:textColor="@color/colorNoirProfond"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorOrangeChaud"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:layout_marginBottom="3dp"
-                        android:text="« On commence à vieillir quand on finit d’apprendre »"
-                        android:textColor="@color/colorNoirProfond"
-                        android:textStyle="normal" />
-                </LinearLayout>
             </LinearLayout>
 
 
@@ -95,6 +76,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Prends ton guide et organise ta vie après ton mariage \nDes conseils pratiques à mettre en place facilement &amp; immédiatement" />
+
+                <ImageView
+                    android:id="@+id/imageViewEBookMariage"
+                    android:layout_width="350dp"
+                    android:layout_height="400dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/guide_organisation_post_mariage" />
+
+                <Button
+                    android:id="@+id/buttonRedirectionEBookMariage"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorOrangeChaud"
+                    android:text="Je prends !" />
 
                 <TextView
                     android:id="@+id/textView354"
@@ -119,46 +130,8 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@color/colorOrangeChaud"
-            android:text="Voir les formations" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorNoirProfond"
-                    android:layout_marginRight="3dp"
-                    android:layout_marginLeft="3dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="25dp"
-                    android:textStyle="bold"
-                    android:text="Ouais d'accord mais quelles formations ?! " />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp"
-                    android:layout_gravity="center"
-                    android:textColor="@color/colorNoirProfond"
-                    android:layout_marginTop="10dp"
-                    android:text="Nous proposons des formations dans plusieurs domaines, vous allez retrouver des formations sur :
-    \n
-    \n- Le developpement personnel,
-    \n- L'arabe,
-    \n- L'anglais,
-    \n- La hijama,
-    \n- L'entreprenariat,
-    \n- La vie de couple,
-    \n- et d'autres domaines.
-    \n
-                    \nLes formations vont être ajoutées au fur et à mesure in sha Allah, visitez notre site régulièrement pour être informé sur les nouvelles formations et les nouveaux domaines." />
-            </LinearLayout>
+            android:text="Voir les formations"
+            android:layout_marginBottom="10dp"/>
 
 
             <!-- CA SERA POUR LE LOT 2 (VOIR FICHIER WORD)
