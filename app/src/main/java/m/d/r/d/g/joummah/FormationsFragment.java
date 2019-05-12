@@ -6,21 +6,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
-
-
-import java.util.ArrayList;
-import java.util.List;
-
-import m.d.r.d.g.joummah.mesobjets.MaFormationPopulaire;
 
 public class FormationsFragment extends Fragment {
 
@@ -31,7 +21,7 @@ public class FormationsFragment extends Fragment {
 
 
 
-/*   PAS POUR LE LOT 1
+
 
         // ici c'est un test pour le boutton info du fragment khoutba //
         ImageButton infoEcranFormations;
@@ -43,7 +33,7 @@ public class FormationsFragment extends Fragment {
                 startActivity(new Intent(getActivity(), InfoUtilisationAppFormations.class));
             }
         });
-*/
+
 
         // Redirection vers le site www.joummah.com pour les formations (LOT 1 application)
         Button redirectionSiteJoummahFormations;
@@ -52,7 +42,21 @@ public class FormationsFragment extends Fragment {
         redirectionSiteJoummahFormations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url ="http://www.google.com";
+                String url ="https://joummah.com/formations/";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+
+        Button redirectionEbookOrgaPostMariage;
+
+        redirectionEbookOrgaPostMariage = (Button) viewFormations.findViewById(R.id.buttonRedirectionEBookMariage);
+        redirectionEbookOrgaPostMariage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url ="https://joummah.com/produit/guide-organisation-post-mariage/";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
