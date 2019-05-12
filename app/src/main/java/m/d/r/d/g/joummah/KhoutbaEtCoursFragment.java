@@ -5,6 +5,7 @@ package m.d.r.d.g.joummah;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -25,8 +26,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import m.d.r.d.g.joummah.mesobjets.MaKhoutba;
+import m.d.r.d.g.joummah.services.PostService;
 
 
 public class KhoutbaEtCoursFragment extends Fragment {
@@ -69,6 +72,8 @@ public class KhoutbaEtCoursFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View viewKhoutba = inflater.inflate(R.layout.fragment_khoutbaetcours, container, false);
 
+
+        chargementLien();
 
         // ici c'est un test pour le boutton info du fragment khoutba //
         ImageButton infoEcranKhoutba;
@@ -179,6 +184,20 @@ public class KhoutbaEtCoursFragment extends Fragment {
         return viewKhoutba;
     }
 
+    private void chargementLien() {
+        PostService postService = new PostService();
+        AsyncTask<Void, Void, String> task = postService.execute();
+        try {
+            String resultat = task.get();
+            Log.i("résultat", "résultat : "+resultat);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+    }
+
+
     private class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
         private CardView mCardViewKhoutba;
@@ -244,6 +263,9 @@ public class KhoutbaEtCoursFragment extends Fragment {
         public int getItemCount() {
             return mListKhoutba.size();
         }
+
+
+
     }
 }
 
