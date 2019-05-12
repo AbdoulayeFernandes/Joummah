@@ -3,7 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <android.support.v7.preference.PreferenceCategory
-        android:title="Category 1">
+        android:title="Paramètres">
+
+
+<!-- PAS POUR LE LOT 1
 
         <android.support.v7.preference.SwitchPreferenceCompat
             android:key="key1"
@@ -22,8 +25,48 @@
             android:title="CheckBox Preference"
             android:summary="CheckBox Summary"
             android:defaultValue="true"/>
+
+-->
+
+
+        <Preference
+        android:summary="Une question ? Une suggestion ? :)"
+        android:title="Nous Contacter">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://joummah.com/contact/" />
+        </Preference>
+
+        <Preference
+            android:summary="Qu'Allah vous récompense pour votre soutien !"
+            android:title="Nous mettre 5 étoiles">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="" /> // lien pour noter l'application
+        </Preference>
+
+        <Preference
+            android:summary=" "
+            android:title="Devenir Formateur">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://joummah.com/devenir-formateur/" />
+        </Preference>
+
+
+        <Preference
+            android:summary="Partage l'application à ton entourage !"
+            android:title="Partager l'application">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data=" " /> // Il faut ajouter le lien de partage de application même si je pense que c'est un autre genre d'intent qu'il faut
+        </Preference>
+
+
+
+
     </android.support.v7.preference.PreferenceCategory>
 
 </android.support.v7.preference.PreferenceScreen>
 
-    <!-- Version Premium / Partager app / Envoyer suggestion / couleur thème -->
+    <!-- Partager app / Envoyer suggestion / couleur thème / Devenir formateur / Condition utilisation / -->
