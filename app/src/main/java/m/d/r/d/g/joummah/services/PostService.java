@@ -11,7 +11,7 @@ import okhttp3.Response;
 
 public class PostService extends AsyncTask<Void, Void, String> {
 
-    private String urlRecuperationInfoPost = "http://192.168.0.18:8888/wordpress/API/Blogservice.php";
+    private String urlRecuperationInfoPost = "https://joummah.com/API/Blogservice.php";
 
 
     @Override
