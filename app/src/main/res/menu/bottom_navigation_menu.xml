@@ -8,14 +8,14 @@
         android:title="Rappels"/>
 
     <item
-        android:id="@+id/buttom_nav_menu_formations"
-        android:icon="@drawable/ic_baseline_extension_24px"
-        android:title="Formations"/>
-
-    <item
         android:id="@+id/buttom_nav_menu_khoutbaetcours"
         android:icon="@drawable/ic_blogger"
         android:title="Blog"/>
+
+    <item
+        android:id="@+id/buttom_nav_menu_formations"
+        android:icon="@drawable/ic_baseline_extension_24px"
+        android:title="Formations"/>
 
     <item
         android:id="@+id/buttom_nav_menu_boutique"
