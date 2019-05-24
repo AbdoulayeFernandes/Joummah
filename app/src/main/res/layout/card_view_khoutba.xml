@@ -16,7 +16,7 @@
         android:background="@color/colorWhiteSnow">
 
         <ImageView
-            android:id="@+id/video_cardview_khoutba"
+            android:id="@+id/videoimage_cardview_khoutba"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:background="@color/colorWhiteSnow"/>

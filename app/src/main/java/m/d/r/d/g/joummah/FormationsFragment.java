@@ -78,6 +78,14 @@ public class FormationsFragment extends Fragment {
 
         */
 
+
+       // Picasso.get().load("https:\\/\\/joummah.com\\/wp-content\\/uploads\\/2019\\/05\\/coffee-563800_1920.jpg").into((ImageView) viewFormations.findViewById(R.id.imageViewEBookMariage));
+
+        /* Pour afficher la miniature d'une vidéo youtube
+        lien youtube vidéo : https://www.youtube.com/watch?v=IkfDp6emrgo
+        lien youtube image miniature : https://img.youtube.com/vi/IkfDp6emrgo/0.jpg
+        */
+
         return viewFormations;
     }
 

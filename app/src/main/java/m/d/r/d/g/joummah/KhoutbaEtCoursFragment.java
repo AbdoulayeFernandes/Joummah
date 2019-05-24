@@ -21,8 +21,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -78,6 +81,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
 
         final List<MaKhoutba> listkhoutba = chargementLien();
 
+
         // ici c'est un test pour le boutton info du fragment khoutba //
         ImageButton infoEcranKhoutba;
 
@@ -94,8 +98,8 @@ public class KhoutbaEtCoursFragment extends Fragment {
         recyclerViewKhoutba.setLayoutManager(new LinearLayoutManager(getActivity()));
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(listkhoutba);
         recyclerViewKhoutba.setAdapter(recyclerViewAdapter);
-        // SEARCHVIEW
 
+        // SEARCHVIEW
         mSearchViewKhoutba = viewKhoutba.findViewById(R.id.searchview_ecrankhoutba);
         mSearchViewKhoutba.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -180,6 +184,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
 
         List<MaKhoutba> listPost = new ArrayList<>();
 
+
         try {
             String resultat = task.get();
             Log.i("résultat", "résultat : "+resultat);
@@ -190,8 +195,16 @@ public class KhoutbaEtCoursFragment extends Fragment {
                 JSONObject jsonPost = jsonArray.getJSONObject(i);
                 MaKhoutba khoutba = new MaKhoutba();
                 khoutba.setTitre(jsonPost.getString("titre"));
+
+                String lienImageOuVideo = "lien";
+
                 khoutba.setContenu(jsonPost.getString("description"));
+                khoutba.setLien(jsonPost.getString(lienImageOuVideo));
                 listPost.add(khoutba);
+
+
+                Picasso.get().load(lienImageOuVideo).into((ImageView) viewKhoutba.findViewById(R.id.videoimage_cardview_khoutba));
+
             }
 
         } catch (InterruptedException e) {
@@ -225,6 +238,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
             mTextViewTitreKhoutba = itemView.findViewById(R.id.titre_cardview_khoutba);
             mTextViewContenuKhoutba = itemView.findViewById(R.id.contenu_cardview_khoutba);
             mButtonPartager = itemView.findViewById(R.id.button_partager_khoutba);
+
 
             mButtonPartager.setOnClickListener(new View.OnClickListener() {
 
@@ -265,6 +279,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
             MaKhoutba khoutba = mListKhoutba.get(position);
             holder.mTextViewTitreKhoutba.setText(khoutba.getTitre());
             holder.mTextViewContenuKhoutba.setText(khoutba.getContenu());
+
         }
 
         @Override
@@ -273,11 +288,8 @@ public class KhoutbaEtCoursFragment extends Fragment {
         }
 
 
-
     }
 }
-
-
 
         /*
         LinearLayout layoutContenantCardView = (LinearLayout) viewKhoutba.findViewById(R.id.layoutcontenant_CardView_Khoutba);
@@ -340,6 +352,5 @@ public class KhoutbaEtCoursFragment extends Fragment {
                 }
             });
         }
-
 
         */
