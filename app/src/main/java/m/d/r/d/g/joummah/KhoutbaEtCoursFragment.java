@@ -1,8 +1,6 @@
 package m.d.r.d.g.joummah;
 
 
-
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -12,7 +10,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -200,10 +197,9 @@ public class KhoutbaEtCoursFragment extends Fragment {
 
                 khoutba.setContenu(jsonPost.getString("description"));
                 khoutba.setLien(jsonPost.getString(lienImageOuVideo));
+
                 listPost.add(khoutba);
 
-
-                Picasso.get().load(lienImageOuVideo).into((ImageView) viewKhoutba.findViewById(R.id.videoimage_cardview_khoutba));
 
             }
 
@@ -221,7 +217,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
 
     private class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
-        private CardView mCardViewKhoutba;
+        private ImageView mImageViewPost;
         private TextView mTextViewTitreKhoutba;
         private Button mButtonPartager;
         private Intent shareIntent;
@@ -234,7 +230,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
         public RecyclerViewHolder(LayoutInflater inflater, ViewGroup container) {
             super(inflater.inflate(R.layout.card_view_khoutba, container, false));
 
-            mCardViewKhoutba = itemView.findViewById(R.id.cardview_notifications);
+            mImageViewPost = itemView.findViewById(R.id.videoimage_cardview_khoutba);
             mTextViewTitreKhoutba = itemView.findViewById(R.id.titre_cardview_khoutba);
             mTextViewContenuKhoutba = itemView.findViewById(R.id.contenu_cardview_khoutba);
             mButtonPartager = itemView.findViewById(R.id.button_partager_khoutba);
@@ -279,7 +275,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
             MaKhoutba khoutba = mListKhoutba.get(position);
             holder.mTextViewTitreKhoutba.setText(khoutba.getTitre());
             holder.mTextViewContenuKhoutba.setText(khoutba.getContenu());
-
+            Picasso.get().load(khoutba.getLien()).into(holder.mImageViewPost);
         }
 
         @Override
