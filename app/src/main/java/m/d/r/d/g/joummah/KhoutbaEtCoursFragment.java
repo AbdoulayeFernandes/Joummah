@@ -12,6 +12,8 @@ import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,6 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+import m.d.r.d.g.joummah.helper.YouTubeHelper;
 import m.d.r.d.g.joummah.mesobjets.MaKhoutba;
 import m.d.r.d.g.joummah.services.PostService;
 
@@ -174,6 +177,7 @@ public class KhoutbaEtCoursFragment extends Fragment {
         return viewKhoutba;
     }
 
+
     // récuparation infos posts
     private List<MaKhoutba> chargementLien() {
         PostService postService = new PostService();
@@ -194,12 +198,14 @@ public class KhoutbaEtCoursFragment extends Fragment {
                 khoutba.setTitre(jsonPost.getString("titre"));
 
                 String lienImageOuVideo = "lien";
+                String lienPartagePost = "guid";
 
                 khoutba.setContenu(jsonPost.getString("description"));
-                khoutba.setLien(jsonPost.getString(lienImageOuVideo));
+                khoutba.setLienImageOuVideo(jsonPost.getString(lienImageOuVideo));
+                khoutba.setLienPost(jsonPost.getString(lienPartagePost));
+
 
                 listPost.add(khoutba);
-
 
             }
 
@@ -211,8 +217,10 @@ public class KhoutbaEtCoursFragment extends Fragment {
             e.printStackTrace();
         }
 
+
         return listPost;
     }
+
 
 
     private class RecyclerViewHolder extends RecyclerView.ViewHolder {
@@ -220,7 +228,6 @@ public class KhoutbaEtCoursFragment extends Fragment {
         private ImageView mImageViewPost;
         private TextView mTextViewTitreKhoutba;
         private Button mButtonPartager;
-        private Intent shareIntent;
         private TextView mTextViewContenuKhoutba;
 
         public RecyclerViewHolder(View itemView) {
@@ -235,32 +242,17 @@ public class KhoutbaEtCoursFragment extends Fragment {
             mTextViewContenuKhoutba = itemView.findViewById(R.id.contenu_cardview_khoutba);
             mButtonPartager = itemView.findViewById(R.id.button_partager_khoutba);
 
-
-            mButtonPartager.setOnClickListener(new View.OnClickListener() {
-
-                @SuppressLint({"ResourceType", "NewApi"})
-                @Override
-                public void onClick (View view) {
-                    shareIntent = new Intent (Intent.ACTION_SEND);
-                    shareIntent.setAction(Intent.ACTION_SEND);
-                    shareIntent.setType("text/plain");
-                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Joummah");
-                    // avant de modifier jsute après il faut que tu vois comment partager une vidéo(lien)
-                    shareIntent.putExtra(Intent.EXTRA_TEXT, "http://www.youtube.com");
-                    startActivity(Intent.createChooser(shareIntent, "Partager sur"));
-                }
-            });
         }
     }
 
     private class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
         private List<MaKhoutba> mListKhoutba;
+        private YouTubeHelper youTubeHelper = new YouTubeHelper();
 
         public RecyclerViewAdapter(List<MaKhoutba> listkhoutba) {
             this.mListKhoutba = listkhoutba;
         }
-
 
         @NonNull
         @Override
@@ -272,17 +264,36 @@ public class KhoutbaEtCoursFragment extends Fragment {
         @Override
         public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
 
-            MaKhoutba khoutba = mListKhoutba.get(position);
+            final MaKhoutba khoutba = mListKhoutba.get(position);
             holder.mTextViewTitreKhoutba.setText(khoutba.getTitre());
-            holder.mTextViewContenuKhoutba.setText(khoutba.getContenu());
-            Picasso.get().load(khoutba.getLien()).into(holder.mImageViewPost);
+            holder.mTextViewContenuKhoutba.setText(Html.fromHtml(khoutba.getContenu().replace("\n", "<br/>")));
+            // Linkify.addLinks(holder.mTextViewContenuKhoutba, Linkify.WEB_URLS);
+            holder.mTextViewContenuKhoutba.setMovementMethod(LinkMovementMethod.getInstance());
+            String idLienYoutube = youTubeHelper.extractVideoIdFromUrl(khoutba.getLienImageOuVideo());
+            Picasso.get().load(khoutba.getLienImageOuVideo()).into(holder.mImageViewPost);
+ // faire un article avec image, condiion if pas id youtube alors télécharge l'image, sinon if id alors télécharge lien youtube
+
+            holder.mButtonPartager.setOnClickListener(new View.OnClickListener() {
+
+                private Intent shareIntent;
+
+                @SuppressLint({"ResourceType", "NewApi"})
+                @Override
+                public void onClick (View view) {
+                    shareIntent = new Intent (Intent.ACTION_SEND);
+                    shareIntent.setAction(Intent.ACTION_SEND);
+                    shareIntent.setType("text/plain");
+                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Joummah");
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, khoutba.getLienPost());
+                    startActivity(Intent.createChooser(shareIntent, "Partager sur"));
+                }
+            });
         }
 
         @Override
         public int getItemCount() {
             return mListKhoutba.size();
         }
-
 
     }
 }
